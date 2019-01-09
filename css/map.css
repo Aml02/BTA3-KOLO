@@ -1,0 +1,184 @@
+
+        
+        
+        
+        
+        
+        
+        * { box-sizing: border-box; }
+body {
+ /* background: #88a;*/
+  color: #fff;
+  font-family: Avenir, Calibri, sans-serif;
+    background-attachment: fixed;
+	background-image:url(../images/food1.png);
+	height:auto;
+}
+
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+ 
+}
+
+/* Header */
+
+
+
+
+
+
+
+
+
+nav{width: 100%;
+box-shadow:10px;position:fixed;}
+
+
+#logo{
+	
+	width:15%;
+	height:95%;	
+}
+
+.nav_bar{
+
+	margin:0 auto;
+	font-size:24px;
+	padding:0px 20px;	
+}
+
+#nav_bar2{
+	
+	width:100%;
+	background-color:#333;
+}
+
+.nav_bar li{
+
+	margin:0px 20px;	
+}
+
+#nav_bar2 a:link{font-size: 16px;
+
+	color:#FFF;font-family: serif;
+    opacity: .6;
+}
+
+#nav_bar2 a:visited{
+
+	color:#FFF;	
+}
+
+#nav_bar2 a:hover{
+
+	color:#FFF;opacity: 1;	
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------------------------------------------------------*/
+          
+             
+.bg{background-image: url(../images/image-from-rawpixel-id-441046-jpeg.jpg);
+           background-size:cover;
+            background-repeat: no-repeat;
+     margin-top: 10%;
+    
+    
+}
+        
+       
+        #EgyptMap { 
+  margin-left: 20%;
+   margin-top: 15%; 
+ fill:orange;
+  
+}
+#EgyptMap g {
+  transition: .3s;
+    transform: translate(0,-25%) ;
+}
+#JANOUBSINAI:hover { 
+  fill: #FFF;
+  cursor: pointer;
+}
+#CAIRO:hover { 
+  fill: #FFF;
+  cursor: pointer;
+}
+#GIZA:hover { 
+  fill: #FFF;
+  cursor: pointer;
+}
+#Alexandria:hover { 
+  fill: #FFF;
+  cursor: pointer;
+}
+#Aswan:hover { 
+  fill: #FFF;
+  cursor: pointer;
+}
+#LUXOR:hover { 
+  fill: #FFF;
+  cursor: pointer;
+}
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+ .active, .active:hover { 
+  fill: yellow !important;
+}		
+#provinceInfo { 
+  position: absolute;
+  top: 15%; right: 2%;
+  width: 40%;
+  /*background:#000; /*rgba(0,0,0,0.2);*/
+  pointer-events: none;
+  opacity: 0;
+  transition: 1s; 
+}
+@media all and (max-width: 800px) {
+  #provinceInfo { width: 40%; }
+}
+@media all and (max-width: 750px) {
+  #provinceInfo { 
+    width: 100%; 
+    position: static; 
+    background: none;
+  }
+#provinceInfo.show p { 
+  color: #000 !important; 
+  margin-bottom: 2rem; 
+  }
+}
+#provinceInfo.show { opacity: 1; }
+#provinceInfo h1 {
+  background: hsl(240, 55%, 40%);
+  padding: .3rem;
+  padding-left: 1rem;
+  margin-top: -.5rem;
+  font-weight: 400;
+}
+#provinceInfo p {
+  width:100%;
+}
+#provinceInfo images {
+  width: 100%;margin-top: 5%;
+}
+ 
+ 
