@@ -290,8 +290,8 @@ function opennav() {
     <!-- internal link -->
     <a name="home"></a>
     <!-- nav search with side show-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-warning" id="nav_bar2">
-          <images src="images/123.png" alt="bta3 kolo" id="logo">    
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-warning" id="nav_bar2">
+          <img src="images/123.png" alt="bta3 kolo" id="logo">    
           <button class="navbar-toggler btn btn-dark " type="button" data-toggle="collapse" 
           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
           aria-expanded="false" aria-label="Toggle navigation">
@@ -300,7 +300,7 @@ function opennav() {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="nav_bar navbar-nav mr-auto">
                  <li class="nav-item active">
-                   <a class="nav-link" href="index.html#home">Home <span class="sr-only">(current)</span></a>
+                   <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                  </li>
                  <li class="nav-item active">
                    <a class="nav-link" href="index.html#serve">Services</a>
@@ -313,61 +313,15 @@ function opennav() {
                  </li>
                  
                  <li class="nav-item active">
-                   <a class="nav-link" href="map.html">Take A Round<span class="sr-only">(current)</span></a>
+                   <a class="nav-link" href="index.htmlmap.html">Take A Round<span class="sr-only">(current)</span></a>
                  </li>
       		  </ul>
               
-                  <div id="search" style="" onClick="opennav();">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-				        <span id="title">Search City </span>
-                  </div>
+                 
               
           </div>
-    </nav><br>
-    
-<div class="navbar1" style="display:none;z-index:1111;" id="nav1" >
+    </nav>
 
-      
-      <.html
-        
-            $conn = mysqli_connect("localhost", "root", "55555","bta3kolo");
-            $conn2 = mysqli_connect("localhost", "root", "55555","bta3kolo");
-        
-            $sql = "SELECT * FROM city";
-        
-            $result = mysqli_query($conn, $sql);
-            for($x = 0 ; $x < mysqli_num_rows($result) ; $x++){
-                $rows = mysqli_fetch_array($result);
-      ?>
-      
-      <div class="dropdown1">
-        <button class="dropbtn1"><.html echo $rows['city']; $city_id=$rows['city_id']; ?></button>
-        <div class="dropdown-content1">
-        <.html 
-                            
-                   $sql2 = "SELECT Distinct zone_id, zone.zone,zone.city_id from zone where zone.city_id=$city_id; ";       
-                   $result2 = mysqli_query($conn2, $sql2);
-                   for($y = 0 ; $y < mysqli_num_rows($result2) ; $y++){
-                       $rows2 = mysqli_fetch_array($result2);
-                ?>
-            <a href="search.html?zone_id=<.html echo $rows2['zone_id']?>&city_id=<.html echo $rows2['city_id']?>"><.html echo $rows2['zone']?></a>
- <.html }?>
-        </div>
-      </div>   
-      
-      <.html 
-	  
-		  }
-		  
-		  mysqli_free_result($result2);
-		  mysqli_close($conn2);
-		  mysqli_free_result($result);
-		  mysqli_close($conn);
-	?>
-      
-
-
-</div>
 
     <!---------------------------------------------------------------------------------------------------------------->
 
